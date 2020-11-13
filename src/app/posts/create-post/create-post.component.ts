@@ -8,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class CreatePostComponent implements OnInit {
 
     newPost = ""
+    postInput = ""
 
-    onAddPost(postInput: HTMLTextAreaElement){
-        this.newPost = postInput.value; 
+    onAddPost(){
+        this.newPost = this.postInput; 
     }
 
   constructor() { }
